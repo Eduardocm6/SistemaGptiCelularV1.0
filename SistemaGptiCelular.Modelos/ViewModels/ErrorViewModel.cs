@@ -1,4 +1,4 @@
-namespace SistemaGptiCelular.Models
+namespace SistemaGptiCelular.Modelos.ViewModels
 {
     public class ErrorViewModel
     {

@@ -5,6 +5,12 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGptiCelular", "SistemaGptiCelular\SistemaGptiCelular.csproj", "{98E5DBB1-7303-4875-810C-2B9C51F59BBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGptiCelular.AccesoDatos", "SistemaGptiCelular.AccesoDatos\SistemaGptiCelular.AccesoDatos.csproj", "{5F13348D-6124-49A2-8795-3691136CCE57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGptiCelular.Modelos", "SistemaGptiCelular.Modelos\SistemaGptiCelular.Modelos.csproj", "{8EC36FBB-A230-4AE7-B5C2-081EE2693AF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGptiCelular.Utilidades", "SistemaGptiCelular.Utilidades\SistemaGptiCelular.Utilidades.csproj", "{76821724-CE78-4529-8F50-64AC538BBCA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{98E5DBB1-7303-4875-810C-2B9C51F59BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98E5DBB1-7303-4875-810C-2B9C51F59BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98E5DBB1-7303-4875-810C-2B9C51F59BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F13348D-6124-49A2-8795-3691136CCE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F13348D-6124-49A2-8795-3691136CCE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F13348D-6124-49A2-8795-3691136CCE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F13348D-6124-49A2-8795-3691136CCE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC36FBB-A230-4AE7-B5C2-081EE2693AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC36FBB-A230-4AE7-B5C2-081EE2693AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC36FBB-A230-4AE7-B5C2-081EE2693AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC36FBB-A230-4AE7-B5C2-081EE2693AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76821724-CE78-4529-8F50-64AC538BBCA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76821724-CE78-4529-8F50-64AC538BBCA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76821724-CE78-4529-8F50-64AC538BBCA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76821724-CE78-4529-8F50-64AC538BBCA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

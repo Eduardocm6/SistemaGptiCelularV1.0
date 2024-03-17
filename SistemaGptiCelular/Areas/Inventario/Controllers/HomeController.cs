@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using SistemaGptiCelular.Models;
+using SistemaGptiCelular.Modelos.ViewModels;
 using System.Diagnostics;
 
-namespace SistemaGptiCelular.Controllers
+namespace SistemaGptiCelular.Areas.Inventario.Controllers
 {
+    [Area("Inventario")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
