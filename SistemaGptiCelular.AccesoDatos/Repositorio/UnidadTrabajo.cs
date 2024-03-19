@@ -13,11 +13,13 @@ namespace SistemaGptiCelular.AccesoDatos.Repositorio
         private readonly ApplicationDbContext _db;
         public IPlanRepositorio Plan {  get; private set; }
         public IVendedorRepositorio Vendedor { get; private set; }
+        public IMarcaRepositorio Marca { get; private set; }
         public UnidadTrabajo(ApplicationDbContext db)
         {
             _db = db;
             Plan = new PlanRepositorio(_db);
             Vendedor = new VendedorRepositorio(_db);
+            Marca= new MarcaRepositorio(_db);
         }
         public void Dispose()
         {

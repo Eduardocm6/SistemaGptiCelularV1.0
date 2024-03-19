@@ -10,6 +10,7 @@ namespace SistemaGptiCelular.AccesoDatos.Repositorio.IRepositorio
     {
         IPlanRepositorio Plan { get; }
         IVendedorRepositorio Vendedor { get; }
+        IMarcaRepositorio Marca {  get; }
 
         Task Guardar();
     }

@@ -14,6 +14,7 @@ namespace SistemaGptiCelular.AccesoDatos.Data
         }
         public DbSet<Plan> Planes { get; set; }
         public DbSet<Vendedor> Vendedores { get; set; }
+        public DbSet<Marca> Marcas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
