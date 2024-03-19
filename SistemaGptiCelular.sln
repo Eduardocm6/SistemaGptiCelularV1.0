@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGptiCelular", "SistemaGptiCelular\SistemaGptiCelular.csproj", "{98E5DBB1-7303-4875-810C-2B9C51F59BBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGptiCelular", "SistemaGptiCelular\SistemaGptiCelular.csproj", "{98E5DBB1-7303-4875-810C-2B9C51F59BBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGptiCelular.AccesoDatos", "SistemaGptiCelular.AccesoDatos\SistemaGptiCelular.AccesoDatos.csproj", "{5F13348D-6124-49A2-8795-3691136CCE57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGptiCelular.AccesoDatos", "SistemaGptiCelular.AccesoDatos\SistemaGptiCelular.AccesoDatos.csproj", "{5F13348D-6124-49A2-8795-3691136CCE57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGptiCelular.Modelos", "SistemaGptiCelular.Modelos\SistemaGptiCelular.Modelos.csproj", "{8EC36FBB-A230-4AE7-B5C2-081EE2693AF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGptiCelular.Modelos", "SistemaGptiCelular.Modelos\SistemaGptiCelular.Modelos.csproj", "{8EC36FBB-A230-4AE7-B5C2-081EE2693AF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGptiCelular.Utilidades", "SistemaGptiCelular.Utilidades\SistemaGptiCelular.Utilidades.csproj", "{76821724-CE78-4529-8F50-64AC538BBCA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaGptiCelular.Utilidades", "SistemaGptiCelular.Utilidades\SistemaGptiCelular.Utilidades.csproj", "{76821724-CE78-4529-8F50-64AC538BBCA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

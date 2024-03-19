@@ -1,8 +1,8 @@
-﻿@model SistemaGptiCelular.Modelos.Plan
+﻿@model SistemaGptiCelular.Modelos.Vendedor
 @{
 
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var titulo = "Crear Plan";
+    var titulo = "Crear Vendedor";
 }
 
 <form method="post">
@@ -13,7 +13,7 @@
         @if(Model.Id != 0)
         {
             // Actualizar 
-            titulo = "Actualzar Planes ";
+            titulo = "Actualzar Vendedores ";
             <input type="hidden" asp-for="Id" id="id"/>
         }
         <div class="col-12 border-bottom p-0">
@@ -21,44 +21,19 @@
         </div>
         <div class="row mb-2 mt-2">
             <div class="form-group col-md-6">
-                <label>Nombre del Plan</label>
-                <input type="text" asp-for="Nombre" class="form-control" placeholder="Nombre del Plan" id="nombre"/>
+                <label>Nombre del Vendedor</label>
+                <input type="text" asp-for="Nombre" class="form-control" placeholder="Nombre del Vendedor" id="nombre"/>
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
         </div>
 
         <div class="row mb-2 mt-2">
             <div class="form-group col-md-6">
-                <label>Megas Incluidos en el Plan</label>
-                <input type="text" asp-for="Megas" class="form-control" placeholder="Megas Incluidos en el Plan" />
-                <span asp-validation-for="Megas" class="text-danger"></span>
+                <label>Nip Asignado</label>
+                <input type="text" asp-for="Nip" class="form-control" placeholder="Nip Asignado" />
+                <span asp-validation-for="Nip" class="text-danger"></span>
             </div>
         </div>
-
-        <div class="row mb-2 mt-2">
-            <div class="form-group col-md-6">
-                <label>Renta Mensual</label>
-                <input type="text" asp-for="Renta" class="form-control" placeholder="Renta Mensual"/>
-                <span asp-validation-for="Renta" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row mb-2 mt-2">
-            <div class="form-group col-md-6">
-                <label>Comision del Plan</label>
-                <input type="text" asp-for="Comision" class="form-control" placeholder="Comision del Plan" />
-                <span asp-validation-for="Comision" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row mb-2 mt-2">
-            <div class="form-group col-md-6">
-                <label>Redes Sociales Incluidas</label>
-                <input type="text" asp-for="Observaciones" class="form-control" placeholder="Redes Sociales Incluidas" />
-                <span asp-validation-for="Observaciones" class="text-danger"></span>
-            </div>
-        </div>
-
         <div class="row mb-2 mt-2">
             <div class="form-group col-md-6">
                 <label>Status</label>
@@ -92,7 +67,7 @@
 
         function validarNombre() 
         { 
-            var url = '@Url.Content("~/")' + "Admin/Plan/ValidarNombre";
+            var url = '@Url.Content("~/")' + "Admin/Vendedor/ValidarNombre";
             var id = '#id';
             var nombre = '#nombre';
 
@@ -100,7 +75,7 @@
                 $.each(data, function (key, value) {
                     if (value) {
                         var nombre = document.getElementById("nombre");
-                        swal("Error", "Plan ya Existe", "error");
+                        swal("Error", "Vendedor ya Existe", "error");
                         nombre.value = "";
                     }
                 });

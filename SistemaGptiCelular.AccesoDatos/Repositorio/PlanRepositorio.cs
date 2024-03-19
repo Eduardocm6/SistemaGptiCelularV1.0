@@ -9,26 +9,23 @@ using System.Threading.Tasks;
 
 namespace SistemaGptiCelular.AccesoDatos.Repositorio
 {
-    public class PlanRepositorio : Repositorio<Plan>, IPlanRepositorio
+    public class VendedorRepositorio : Repositorio<Vendedor>, IVendedorRepositorio
     {
         private readonly ApplicationDbContext _db;
 
-        public PlanRepositorio(ApplicationDbContext db) : base(db) 
+        public VendedorRepositorio(ApplicationDbContext db) : base(db) 
         {
             _db = db;
         }
 
-        public void Actualizar(Plan plan)
+        public void Actualizar(Vendedor vendedor)
         {
-           var planBD = _db.Planes.FirstOrDefault(b => b.Id == plan.Id);
-            if (planBD != null) 
+           var vendedorBD = _db.Vendedores.FirstOrDefault(b => b.Id == vendedor.Id);
+            if (vendedorBD != null) 
             {
-                planBD.Nombre = plan.Nombre;
-                planBD.Megas = plan.Megas;
-                planBD.Renta = plan.Renta;
-                planBD.Comision = plan.Comision;
-                planBD.Observaciones = plan.Observaciones;
-                planBD.Status = plan.Status;
+                vendedorBD.Nombre = vendedor.Nombre;
+                vendedorBD.Nip = vendedor.Nip;
+                vendedorBD.Status = vendedor.Status;
                 _db.SaveChanges();
             }
         }

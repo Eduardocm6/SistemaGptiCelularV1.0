@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaGptiCelular.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace SistemaGptiCelular.AccesoDatos.Repositorio.IRepositorio
 {
-    public interface IUnidadTrabajo : IDisposable
+    public interface IVendedorRepositorio : IRepositorio<Vendedor>
     {
-        IPlanRepositorio Plan { get; }
-        IVendedorRepositorio Vendedor { get; }
-
-        Task Guardar();
+        void Actualizar(Vendedor vendedor);
     }
 }

@@ -9,13 +9,16 @@ using System.Threading.Tasks;
 
 namespace SistemaGptiCelular.AccesoDatos.Configuracion
 {
-    public class VendedorConfiguracion : IEntityTypeConfiguration<Vendedor>
+    public class PlanConfiguracion : IEntityTypeConfiguration<Plan>
     {
-        public void Configure(EntityTypeBuilder<Vendedor> builder)
+        public void Configure(EntityTypeBuilder<Plan> builder)
         {
             builder.Property(x => x.Id).IsRequired();
             builder.Property(x => x.Nombre).IsRequired().HasMaxLength(50);
-            builder.Property(x => x.Nip).IsRequired();
+            builder.Property(x => x.Megas).IsRequired().HasMaxLength(5);
+            builder.Property(x => x.Renta).IsRequired();
+            builder.Property(x => x.Comision).IsRequired();
+            builder.Property(x => x.Observaciones).IsRequired().HasMaxLength(100);
             builder.Property(x => x.Status).IsRequired();
         }
     }
